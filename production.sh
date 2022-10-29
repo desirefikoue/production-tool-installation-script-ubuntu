@@ -71,7 +71,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 sudo docker run hello-world 
 sudo service docker start
 sudo service docker enable
-sudo service docker status
+#sudo service docker status
 #sudo usermod -a -G docker jenkins
 #sudo service docker start
 

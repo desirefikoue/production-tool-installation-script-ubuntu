@@ -1,9 +1,6 @@
 #!/bin/bash 
 
-sudo apt -y update
-
 sudo apt update -y
-
 
 sudo cat /etc/system-release
 
@@ -45,7 +42,7 @@ touch nat.yml
 echo " Install Terraform"
 wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
-sudo apt update && sudo apt install terraform
+sudo apt update -y && sudo apt install terraform -y
 terraform --version
 
 echo "Install Docker engine"

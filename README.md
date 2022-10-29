@@ -1,3 +1,3 @@
 # centos-sh-10
 
-This is a script to update your centos server 
+This is a vagrant script to standardize our local environment with the production environment running in aws.

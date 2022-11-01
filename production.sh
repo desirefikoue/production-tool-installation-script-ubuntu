@@ -2,6 +2,8 @@
 
 sudo apt update -y
 
+sudo apt install net-tools  -y 
+
 sudo cat /etc/system-release
 
 sudo apt install -y httpd mariadb-server
